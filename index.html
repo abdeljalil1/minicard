@@ -2,19 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MiniCard Support</title>
+<title>PinPlay Support</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body><main>
-<header><img src="icon.png" alt="MiniCard icon"><div><h1>MiniCard</h1><p class="sub">A floating video card that stays on top of every app on your Mac.</p></div></header>
+<header><img src="icon.png" alt="PinPlay icon"><div><h1>PinPlay</h1><p class="sub">A floating video card that stays on top of every app on your Mac.</p></div></header>
 
 <h2>Getting started</h2>
-<p>Paste a video link into the card and press <strong>Play</strong>, or press <strong>From Clipboard</strong> to play the link you copied. The card stays on top when you switch apps, change desktops, or use apps in full screen.</p>
+<p>Paste a video link into the card and press <strong>Play</strong>, press <strong>From Clipboard</strong> to play the link you copied, or drop a link onto the card. The card stays on top when you switch apps, change desktops, or use apps in full screen.</p>
+
+<h2>Send videos from your browser</h2>
+<p><strong>Bookmark button (Safari, Chrome, Firefox, Edge):</strong> drag this button to your bookmarks bar. On a YouTube video, click it and the video continues in PinPlay from the same second.</p>
+<p><a class="bookmarklet" href="javascript:(()=>{const v=document.querySelector('video');let u='pinplay://play?url='+encodeURIComponent(location.href);if(v){if(v.currentTime>0)u+='&t='+Math.floor(v.currentTime);v.pause();}location.href=u;})()">▶︎ Open in PinPlay</a></p>
+<p>The first time, your browser asks whether to open PinPlay. Allow it, and tick “Always allow” if it's offered.</p>
+
+<h2>Keyboard shortcuts</h2>
+<p><strong>⌃⌥⌘V</strong> show or hide the card · <strong>⌃⌥⌘P</strong> play or pause · <strong>⌃⌥⌘L</strong> click-through on or off. You can turn them off in Settings.</p>
 
 <h2>Common questions</h2>
 <p><strong>How do I move or resize the card?</strong><br>Move the mouse over the card to show the top bar. Drag the bar to move the card, and drag any edge to resize it.</p>
-<p><strong>Where did the card go?</strong><br>Click the ▶︎ icon in the menu bar and choose <em>Show / Hide Card</em>. MiniCard has no Dock icon.</p>
-<p><strong>A video won't play.</strong><br>Some video owners turn off playback outside their own website. Those videos can't play in MiniCard; use the Safari button on the card to open them in your browser.</p>
+<p><strong>Where did the card go?</strong><br>Click the ▶︎ icon in the menu bar and choose <em>Show / Hide Card</em>, or press ⌃⌥⌘V. PinPlay has no Dock icon.</p>
+<p><strong>I can't click the card.</strong><br>Click-through is on. Turn it off with ⌃⌥⌘L or from the menu bar icon.</p>
+<p><strong>A video won't play.</strong><br>Some video owners turn off playback outside their own website. Those videos can't play in PinPlay; use the Safari button on the card to open them in your browser.</p>
 
 <h2>Contact</h2>
 <p>For help, bug reports or ideas, <a href="https://github.com/abdeljalil1/minicard/issues/new">open a support request</a>.</p>
